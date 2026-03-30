@@ -13,7 +13,25 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val buttonUpload = findViewById<Button>(R.id.btnUpload)
+        val buttonDownload = findViewById<Button>(R.id.btnDownload)
 
+        /* buttonUpload.setOnClickListener {
+             Toast.makeText(this@MainActivity,"Uploading...",Toast.LENGTH_LONG).show()
+             android.util.Log.d("TEST","CLICKED")
+         }
+         buttonDownload.setOnClickListener {
+             Toast.makeText(this@MainActivity,"Downloading...",Toast.LENGTH_LONG).show()
+         }
+         */
+
+        buttonDownload.setOnClickListener {
+            Snackbar.make(findViewById(android.R.id.content), "Downloading...", Snackbar.LENGTH_LONG).show()
+        }
+
+        buttonUpload.setOnClickListener {
+            Snackbar.make(findViewById(android.R.id.content), "Uploading...", Snackbar.LENGTH_LONG).show()
+        }
 
     }
     }
