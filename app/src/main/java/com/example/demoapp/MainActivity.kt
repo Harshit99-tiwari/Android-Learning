@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 
@@ -15,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val buttonUpload = findViewById<Button>(R.id.btnUpload)
         val buttonDownload = findViewById<Button>(R.id.btnDownload)
+        val layout = findViewById<LinearLayout>(R.id.linearlayout)
+        val toolbar = findViewById<com.google.android.material.appbar.MaterialToolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
 
         /* buttonUpload.setOnClickListener {
              Toast.makeText(this@MainActivity,"Uploading...",Toast.LENGTH_LONG).show()
@@ -27,11 +31,16 @@ class MainActivity : AppCompatActivity() {
 
         buttonDownload.setOnClickListener {
             Snackbar.make(findViewById(android.R.id.content), "Downloading...", Snackbar.LENGTH_LONG).show()
+            //on click dark mode
+            layout.setBackgroundResource(R.color.yellow)
         }
 
         buttonUpload.setOnClickListener {
             Snackbar.make(findViewById(android.R.id.content), "Uploading...", Snackbar.LENGTH_LONG).show()
+            //on click read mode
+            layout.setBackgroundResource(R.color.black)
         }
+
 
     }
     }
