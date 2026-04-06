@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-
     android:layout_margin="20dp"
 
+    android:orientation="vertical"
+
     tools:context=".MainActivity">
+
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -16,25 +18,59 @@
         android:layout_height="?attr/actionBarSize"
         android:title="Demoapp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnDownload"
-        android:layout_width="match_parent"
-        android:textStyle="bold"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
         android:padding="10dp"
-        android:text="Download" />
+        android:text="Download"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnUpload"
-        android:layout_width="match_parent"
-        android:textStyle="bold"
-        android:layout_height="wrap_content"
+        android:layout_width="357dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="5dp"
         android:fontFamily="monospace"
-        android:padding="10dp"
-        android:text="Upload" />
+        android:text="Upload"
+        android:textStyle="bold" />
 
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="95dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="59dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
 
 </LinearLayout>
