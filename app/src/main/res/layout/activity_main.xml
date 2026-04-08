@@ -5,7 +5,7 @@
     android:id="@+id/linearlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    android:padding="20dp"
 
     android:orientation="vertical"
 
@@ -59,18 +59,43 @@
         android:id="@+id/btnUpload"
         android:layout_width="357dp"
         android:layout_height="62dp"
-        android:layout_marginEnd="5dp"
         android:fontFamily="monospace"
         android:text="Upload"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="220dp"
-        android:layout_height="95dp"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="59dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+
+        android:src="@drawable/banner" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="335dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="hello The Magic Show (Whimsical)
+Mr. Hale, thin and white-haired in his black top-hat and tails, gripped his wand and produced doves from a seemingly empty urn. The neighborhood kids sat in rows on the grass, barely breathing as he asked for a volunteer to be sawed in half. When I finally stepped into the box and emerged in one piece, the collective gasp from the crowd made me feel like a star for the first time.
+The Lion and the Mouse (Classic Fable)A lion lay asleep in the forest until a timid little mouse accidentally ran across his nose. Roused from his nap, the lion angrily caught the tiny creature, but he was moved to mercy when the mouse begged for her life, promising to one day repay the favor. Days later, when the lion was trapped in a hunter’s net, the mouse heard his roars and used her sharp teeth to gnaw through the ropes, proving that even the smallest friend can be a great savior.
+The Hidden Flowers (Inspirational)A young woman spent years carefully tending to a plant at the base of her garden’s stone wall, yet it never seemed to bloom. Discouraged, she ne  Here are a few story paragraphs across different genres.The Magic Show (Whimsical)Mr. Hale, thin and white-haired in his black top-hat and tails, gripped his wand and produced doves from a seemingly empty urn. The neighborhood kids sat in rows on the grass, barely breathing as he asked for a volunteer to be sawed in half. When I finally stepped into the box and emerged in one piece, the collective gasp from the crowd made me feel like a star for the first time.
+The Lion and the Mouse (Classic Fable)A lion lay asleep in the forest until a timid little mouse accidentally ran across his nose. Roused from his nap, the lion angrily caught the tiny creature, but he was moved to mercy when the mouse begged for her life, promising to one day repay the favor. Days later, when the lion was trapped in a hunter’s net, the mouse heard his roars and used her sharp teeth to gnaw through the ropes, proving that even the smallest friend can be a great savior.The Hidden Flowers (Inspirational)
+A young woman spent years carefully tending to a plant at the base of her garden’s stone wall, yet it never seemed to bloom. Discouraged, she nearly cut it down until her neighbor called out to thank her for the beautiful flowers. It was only then that she realized the vines had crept through the crevices of the wall, blooming generously on the other side where she couldn't see them—a reminder that effort often bears fruit in ways we don't immediately notice.
+The Cabin (Mystery/Horror)Exhausted after an eight-hour hike, a man stumbled upon a broken-down cabin just as his flashlight battery began to flicker. Inside, he found a solitary bed surrounded by strange portraits of people with chilling, wide smiles that seemed to watch his every move. When he woke the next morning, he was paralyzed with shock to see that there were no paintings on the walls at all—only windows.
+Would you like me to write an original paragraph based on a specific theme, or are you looking for more classic moral stories?
+
+
+
+
+"></TextView>
+    </ScrollView>
 
 
 </LinearLayout>
