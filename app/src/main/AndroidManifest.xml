@@ -12,9 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Demoapp">
         <activity
+            android:name=".Secondactivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:label="Demoapp"
-            android:exported="true">
+            android:exported="true"
+            android:label="Demoapp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

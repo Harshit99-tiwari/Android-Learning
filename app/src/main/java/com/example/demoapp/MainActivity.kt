@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +20,13 @@ class MainActivity : AppCompatActivity() {
         val layout = findViewById<LinearLayout>(R.id.linearlayout)
         val toolbar = findViewById<com.google.android.material.appbar.MaterialToolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+        val btnIntent = findViewById<Button>(R.id.Clickme)
 
+
+        btnIntent.setOnClickListener {
+         intent = Intent(applicationContext, Secondactivity::class.java)
+            startActivity(intent)
+        }
         /* buttonUpload.setOnClickListener {
              Toast.makeText(this@MainActivity,"Uploading...",Toast.LENGTH_LONG).show()
              android.util.Log.d("TEST","CLICKED")
